@@ -1,9 +1,9 @@
 #!/bin/bash
 
-echo "criando usuários...."
+echo "criando diretórios...."
 
 mkdir /publico
-nkdir /adm
+mkdir /adm
 mkdir /ven
 mkdir /sec
 
@@ -26,15 +26,16 @@ chmod 770 /sec
 
 echo "Criando usuários..."
 
-user add carlos -m -c "Carlos Silva" -s /bin/bash -G GRP_ADM
-user add maria -m -c "Maria Silva" -s /bin/bash -G GRP_ADM
-user add joao -m -c "João Silva" -s /bin/bash -G GRP_ADM
+useradd carlos -m -c "Carlos Silva" -s /bin/bash -G GRP_ADM
+useradd maria -m -c "Maria Silva" -s /bin/bash -G GRP_ADM
+useradd joao -m -c "João Silva" -s /bin/bash -G GRP_ADM
 
-user add debora -m -c "Debora Silva" -s /bin/bash -G GRP_VEN
-user add sebastiana -m -c "Sebastiana Silva" -s /bin/bash -G GRP_VEN
-user add roberto -m -c "Roberto Silva" -s /bin/bash -G GRP_VEN
+useradd debora -m -c "Debora Silva" -s /bin/bash -G GRP_VEN
+useradd sebastiana -m -c "Sebastiana Silva" -s /bin/bash -G GRP_VEN
+useradd roberto -m -c "Roberto Silva" -s /bin/bash -G GRP_VEN
 
-user add josefina -m -c "Josefina Silva" -s /bin/bash -G GRP_SEC
-user add amanda -m -c "Amanda Silva" -s /bin/bash -G GRP_SEC
-user add rogerio -m -c "Rogerio Silva" -s /bin/bash -G GRP_SEC
+useradd josefina -m -c "Josefina Silva" -s /bin/bash -G GRP_SEC
+useradd amanda -m -c "Amanda Silva" -s /bin/bash -G GRP_SEC
+useradd rogerio -m -c "Rogerio Silva" -s /bin/bash -G GRP_SEC
 
+echo "Fim ..........."
